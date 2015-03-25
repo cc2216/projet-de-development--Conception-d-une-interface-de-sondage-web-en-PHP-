@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 25 Mars 2015 à 09:57
+-- Généré le :  Mer 25 Mars 2015 à 10:25
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -55,8 +55,7 @@ CREATE TABLE IF NOT EXISTS `personne` (
   `prenom` varchar(255) NOT NULL,
   `nom` varchar(255) NOT NULL,
   `sexe` varchar(255) NOT NULL,
-  `nationalité` varchar(255) NOT NULL,
-  `age` int(11) NOT NULL,
+  `nationalite` varchar(255) NOT NULL,
   `date_naissance` date NOT NULL,
   `mail` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
