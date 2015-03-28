@@ -13,16 +13,17 @@ session_start;
 
 
 
-$var1=$bdd->prepare(' INSERT INTO test_personne(test_categorisation) VALUES(:test_categorisation)'); 
+$var1=$bdd->prepare(' INSERT INTO test_personne(test_imageabilite) VALUES(:test_imageabilite)'); 
 $var1->execute(array(
 	
 		
 		
 		
-		'test_categorisation' => $_POST['reponse']
+		'test_imageabilite' => $_POST['reponse']
 		
 		
 		));
-header('Location: familiarite.php');		
+
+		header('Location: affectif.php');
  	
 ?>
