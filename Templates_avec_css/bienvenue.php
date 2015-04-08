@@ -18,9 +18,9 @@
     header{
         margin:auto;
         text-align: left; 
-        font-size: 10pt;
+        font-size: 30pt;
         color: black;
-        text-decoration: underline;
+       
     }
     a:link {color:#FF0000;}    
     a:visited {color:#00FF00;} 
@@ -41,16 +41,17 @@
 	<body>	
 
 	<header>
-     <img src="../image/logo_telecom_bretagne.jpg" alt="Ballade" width="80" height="80"/>
-	Sondage Neuro-pshycologique
+     <img src="../image/logo_telecom_bretagne.jpg" alt="Ballade" width="120" height="120"/>
+	<h1 class="center">Sondage Neuro-pshycologique</h1>
 	</header>
+    
 
 	<section>
 	
 	<article>
 	<p style="text-align: center; font-size: 20pt; margin: 20px">
 	Bienvenue cher internaute.</p>
-	<p>Vous êtes sur le point de participer à un sondage neuro-psychologique, dont l'objectif est de mieux comprendre le fonctionnement de notre cerveau.<br/>
+	<p class="page-title">Vous êtes sur le point de participer à un sondage neuro-psychologique, dont l'objectif est de mieux comprendre le fonctionnement de notre cerveau.<br/>
 	Ce petit quizz contient 20 questions sous formes de pistes audios, lesquelles vous devez identifier. Vous ne pourrez écouter une piste audio qu'une seule fois.<br/>
 	Merci pour votre temps.<br/>
     </p>
