@@ -4,7 +4,11 @@
 	<meta charset="utf-8" />
 	<title>Bienvenue</title>
     <link  rel="stylesheet" type="text/css" href="..\cssfile\css\style.css"/>
-    
+    <script lang="javascript">
+    function look(){
+        window.location.href="showsexe.php";
+    }
+    </script>
     
 	</head>
     <style>
@@ -57,15 +61,12 @@
     </p>
     </article>
 	
-	<aside>
-	<h1>Auteurs</h1>
-	Ce site a été réalisé, dans le cadre d'un projet à Telecom Bretagne, par: Affane Reda, Nam, Julien , et CHAO.....
-	</aside>
+	
 	</section>
 	
 	<section class="center">
 	<h1>Veuillez renseigner ce formulaire:</h1>
-	<form method="post" action="formulaire.php">
+	<form method="post" action="bienvenue_post.php">
 	<p>
 	
 	<label class="center" for="nom">Nom:</label>
@@ -99,6 +100,8 @@
 	<br/>
 	
 	<input type="submit" value="envoyer"/>
+    <br/>
+    <input type="button" onclick="look();" value="afficher la répartition de sexe"/>
 	</p>
 	</form>
 	</section>
@@ -112,5 +115,10 @@
 	<footer>
 	Contactez nous <a href="#">ici</a>
 	</footer>
+    
+    <aside>
+	<h1>Auteurs</h1>
+	Ce site a été réalisé, dans le cadre d'un projet à Telecom Bretagne, par: Affane Reda, Nam, Julien , et CHAO.....
+	</aside>
 	</body>
 </html>
