@@ -23,10 +23,12 @@ class Page {
  */
 	
     function Page($a, $t, $th1){
-		require_once ('/inc/global.inc.php');
 		$this->_arbo = $a;
 		$this->_titre = $t;
 		$this->_titreh1 = $th1;
+		
+		require_once ($this->_arbo.'inc/global.inc.php');
+		require_once ($this->_arbo.'class/Connexion.class.php');
     }
 	
 	/******************************/
@@ -44,9 +46,7 @@ class Page {
 		
 		//on remplace les variables
 		$contents = str_replace($varTemplates, $replaceVarTemplates, $contents);
-		
-		$contents=str_replace('<'.'?php','<'.'?',$contents);
-		$contents='?'.'>'.trim($contents).'<'.'?';
+		$contents=' ?>'.trim($contents).'<?php ';
 
 		return eval($contents);
 	}
@@ -80,9 +80,7 @@ class Page {
 		
 		//on remplace les variables
 		$contents = str_replace($varTemplates, $replaceVarTemplates, $contents);
-		
-		$contents=str_replace('<'.'?php','<'.'?',$contents);
-		$contents='?'.'>'.trim($contents).'<'.'?';
+		$contents=' ?>'.trim($contents).'<?php ';
 
 		return eval($contents);
 	}

@@ -1,5 +1,4 @@
-<?php
-?><nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top">
 	<ul class="nav navbar-nav">
 		<li><a href="#">element 1</a></li>
 		<li><a href="#">element 2</a></li>
@@ -11,4 +10,4 @@
 			</ul>
 		</li>
 	</ul>
-</nav
+</nav>
