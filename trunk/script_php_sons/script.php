@@ -6,26 +6,35 @@ try
 catch (Exception $e)
 {
         die('Erreur : ' . $e->getMessage());
-		
+}		
+$var1=$bdd->query('SELECT * FROM categorie');
 
-}
 
-$nb_son=0;
+
 echo '<ul>';
- if($dossier=opendir('../MES_SONS')){
+
+ while($var2=$var1->fetch()) {
+	 $nb_son=0;
+	 
+ if($dossier=opendir('../MES_SONS_V2/'.$var2['nom'].'')){
 	 
 	while( false!==($son=readdir($dossier))){
 		if($son!='.' && $son!='..' ){
 		$nb_son++;
-		list($nom,$duree,$choix,$type,$frequence)=explode("_", $son);
-		$bdd->exec('INSERT INTO son(nom,duree,choix,type,frequence,lien) VALUES(\''.$nom.'\',\''.$duree.'\',\''.$choix.'\',\''.$type.'\',\''.$frequence.'\',\'../MES_SONS/'.$son.'\')');
-
+		$tab=explode("_", $son);
+		if($tab[0]!="-"){
+		$bdd->exec('INSERT INTO son(nom,duree,choix,type,frequence,lien,id_categorie) VALUES(\''.$tab[0].'\',\''.$tab[1].'\',\''.$tab[2].'\',\''.$tab[3].'\',\''.str_replace('.wav', '', $tab[4]).'\',\'../MES_SONS/'.$son.'\',\''.$var2['id'].'\')');
+		$new_name= "-_".$son;
+		rename("../MES_SONS_V2/$var2[nom]/$son","../MES_SONS_V2/$var2[nom]/$new_name");
+		}
 		}
 	}
+ 
     echo '</ul><br/>';
 	echo 'Il y a <strong>'.$nb_son.'</strong> sons dans le dossier';
 	closedir($dossier);
  }
  else
 	 echo 'Le dossier n\'a pas pu etre ouvert';
+ }
  ?>
