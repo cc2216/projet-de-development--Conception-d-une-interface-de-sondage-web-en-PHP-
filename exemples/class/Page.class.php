@@ -61,11 +61,7 @@ class Page {
 				$file = $this->_arbo."themes/".$GLOBALS['themes']."/templates/menu_large.php";
 			break;
 			case "client":
-				if(is_file($this->_arbo."themes/".$GLOBALS['themes']."/templates/".$contenu->getRubrique()."/menu.tpl.php")){
-					$file = $this->_arbo."themes/".$GLOBALS['themes']."/templates/".$contenu->getRubrique()."/menu.tpl.php";
-				}else{
 					$file = $this->_arbo."themes/".$GLOBALS['themes']."/templates/menu.tpl.php";
-				}
 			break;
 			case "adminPage":
 				$file = $this->_arbo."themes/".$GLOBALS['themes']."/templates/admin/admin_menu_contenu.php";
