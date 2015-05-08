@@ -31,7 +31,7 @@ session_start;
 	
 	<body>
 	<p>Vous ecouterez le son seulement une fois. Veuillez identifier le son en ecrivant son nom.<p>
-	<audio src="../Sons/pluie.mp3" controls>Veuillez mettre ид jour votre navigateur !</audio>
+	<audio src="../MES_SONS_V2/Animal/-_ane_0.5_a_mono_44100.wav" controls>Veuillez mettre ид jour votre navigateur !</audio>
 	<form method="post" action="identification_post.php">
 	<p>
 
