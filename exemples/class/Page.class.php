@@ -14,7 +14,7 @@ class Page {
 	var $_titreh1;
 	var $_description; // metadata description
 	var $_motscles; //metadata keywords
-	var $_contenu;	
+	var $_contenu;
 	var $_url;
 	var $_scripts = array();
 
@@ -23,19 +23,19 @@ class Page {
  */
 	
     function Page($a, $t, $th1){
+		require_once ('/inc/global.inc.php');
 		$this->_arbo = $a;
 		$this->_titre = $t;
 		$this->_titreh1 = $th1;
-		
-		require_once ($this->_arbo.'inc/global.inc.php');
-		require_once ($this->_arbo.'class/Connexion.class.php');
     }
 	
 	/******************************/
 	function pageHaut(){
-		
+	
 	
 		$file = $this->_arbo."themes/".$GLOBALS['themes']."/templates/entete.tpl.php";
+      
+        
 
 		$handle = fopen ($file, "r");
 		$contents = fread ($handle, filesize ($file));
@@ -46,13 +46,30 @@ class Page {
 		
 		//on remplace les variables
 		$contents = str_replace($varTemplates, $replaceVarTemplates, $contents);
-		$contents=' ?>'.trim($contents).'<?php ';
+		
+		//$contents=str_replace('<'.'?php','<'.'?',$contents);
+		$contents='?'.'>'.trim($contents).'<'.'?';
 
 		return eval($contents);
 	}
 
 	
 	/******************************/
+    function test($nom_test){
+        
+        /*$file = $this->_arbo."themes/".$GLOBALS['themes']."/templates/tests/".$nom_test.".php";
+        //$file = $this->_arbo."tests/".$GLOBALS['bienvenue']."/templates/entete.tpl.php";
+        
+
+		$handle = fopen ($file, "r");
+		$contents_body = fread ($handle, filesize ($file));
+        
+        $contents_body=str_replace('<'.'?php','<'.'?',$contents_body);
+		$contents_body='?>'.trim($contents_body);
+		
+        return eval($contents_body);*/
+        require_once ("themes/".$GLOBALS['themes']."/templates/tests/".$nom_test.".php");
+    }
 	function menuPrincipal($typeMenu){
 		global $contenu;
 		
@@ -61,7 +78,11 @@ class Page {
 				$file = $this->_arbo."themes/".$GLOBALS['themes']."/templates/menu_large.php";
 			break;
 			case "client":
+				if(is_file($this->_arbo."themes/".$GLOBALS['themes']."/templates/".$contenu->getRubrique()."/menu.tpl.php")){
+					$file = $this->_arbo."themes/".$GLOBALS['themes']."/templates/".$contenu->getRubrique()."/menu.tpl.php";
+				}else{
 					$file = $this->_arbo."themes/".$GLOBALS['themes']."/templates/menu.tpl.php";
+				}
 			break;
 			case "adminPage":
 				$file = $this->_arbo."themes/".$GLOBALS['themes']."/templates/admin/admin_menu_contenu.php";
@@ -80,7 +101,9 @@ class Page {
 		
 		//on remplace les variables
 		$contents = str_replace($varTemplates, $replaceVarTemplates, $contents);
-		$contents=' ?>'.trim($contents).'<?php ';
+		
+		$contents=str_replace('<'.'?php','<'.'?',$contents);
+		$contents='?'.'>'.trim($contents).'<'.'?';
 
 		return eval($contents);
 	}
