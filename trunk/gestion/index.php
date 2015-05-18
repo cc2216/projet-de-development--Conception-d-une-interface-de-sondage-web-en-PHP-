@@ -28,7 +28,7 @@ $var1= $bdd->query(' SELECT son.lien, COUNT(test_personne.id_son) as numberofuti
         limit 1');
         $var2=$var1->fetch();
         $tab=explode("/",$var2['lien']);
-        echo $tab[2];
+        //echo $tab[2];
        echo $p->pageHaut();
        echo $p->test($nom_test,$tab[2]);
 	}
