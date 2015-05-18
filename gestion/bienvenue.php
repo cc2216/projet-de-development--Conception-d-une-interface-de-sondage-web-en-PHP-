@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<script type="text/javascript">
+history.go(1);
+</script>
+
 <html>
 	<head>
 	<meta charset="utf-8" />

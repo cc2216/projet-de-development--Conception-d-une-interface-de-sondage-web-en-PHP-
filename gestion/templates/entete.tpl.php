@@ -1,3 +1,18 @@
+<script type="text/javascript">
+history.go(1);
+</script>
+<?php
+try
+{
+	$bdd = new PDO('mysql:host=localhost;dbname=projetdev;charset=utf8', 'root', '');
+}
+catch (Exception $e)
+{
+        die('Erreur : ' . $e->getMessage());
+}
+
+//session_start;
+?>
 <html>
 	<head>
         <meta charset="utf-8" />
