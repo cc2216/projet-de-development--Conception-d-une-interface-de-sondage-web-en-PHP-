@@ -38,20 +38,20 @@ LIMIT 1
 
 //pour le test de représentativité (fonctionne)
 SELECT son.lien, COUNT(test_personne.id_son) as numberofutilization FROM son
-LEFT JOIN test_personne ON son.id_son=test_personne.id_son
+LEFT JOIN test_personne ON son.id=test_personne.id_son
 WHERE son.nom IN(
 
 SElECT son.nom FROM son
 WHERE son.nom NOT IN (
 	SELECT son.nom FROM son 
-	WHERE son.id_son IN (
+	WHERE son.id IN (
 		SELECT test_personne.id_son FROM test_personne 
 		WHERE test_personne.id_personne = 1
 	) GROUP BY nom
 ) 
 GROUP BY son.nom
 )
-GROUP BY son.id_son
+GROUP BY son.id
 ORDER BY numberofutilization, lien
 LIMIT 5
 

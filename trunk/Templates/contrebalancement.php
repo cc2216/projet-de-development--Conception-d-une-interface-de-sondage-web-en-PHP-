@@ -23,8 +23,9 @@ GROUP BY id_son*/
 SELECT son.lien, COUNT(test_personne.id_son) as numberofutilisation FROM son
 LEFT JOIN test_personne
 ON son.id=test_personne.id_son
-WHERE test_personne.id_personne != 1
 GROUP BY id_son
+WHERE test_personne.id_personne != 1
+
 ORDER BY numberofutilisation
 limit 1
 ?>
