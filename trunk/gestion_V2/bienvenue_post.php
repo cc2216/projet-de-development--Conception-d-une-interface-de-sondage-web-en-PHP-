@@ -1,5 +1,7 @@
 <?php
-session_start(); 
+session_start();
+    $_SESSION['test']='identification';
+    $_SESSION['id_test']=1; 
 
 try
 {
@@ -29,17 +31,15 @@ $var1->execute(array(
 $var2=$bdd->query(' SELECT * FROM personne ORDER BY id DESC LIMIT 0,1');
 $var3=$var2->fetch();
 
-	$_SESSION['nom']=$var3['nom'];
-	$_SESSION['prenom']=$var3['prenom'];
-	$_SESSION['id']=$var3['id'];
+	
 	
 	 $var2->closeCursor();
 
-
-
+    
+  
 	 
-	 header('Location: http://localhost/gestion/?test=identification&id=1');
-     exit;
+	 header('Location: http://localhost/gestion');
+   
     // echo "<script>window.location = http://localhost/exemples1/?test=identification";</script>";
 
      //header('Location: identification.php');

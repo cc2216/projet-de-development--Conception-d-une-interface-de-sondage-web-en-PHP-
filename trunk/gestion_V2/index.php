@@ -1,4 +1,8 @@
 <?php
+       session_start();
+       
+
+
         try
        {
          $bdd = new PDO('mysql:host=localhost;dbname=projetdev;charset=utf8', 'root', '');
@@ -13,20 +17,19 @@
   include ('./class/Connexion.class.php');
     //$heard= $_SERVER['QUERY_STRING'];
     //$heard = str_replace('test=', '', $heard);
-    if($_SERVER['QUERY_STRING']==null)
+  if( !(isset($_SESSION['start'])))
     {
         require_once ('bienvenue.php');
     }
     else
 	{
-	   $p = new Page ('./', $_GET['test'], 'Test d\''.$_GET['test']);//afficher la tete de test
+	   $p = new Page ('./', $_SESSION['test'], 'Test d\''.$_SESSION['test']);//afficher la tete de test
 	   
       $c = new Connexion();
       $bdd = $c->connect();
 
-       $nom_test = $_GET['test'];
-       $id_test=$_GET['id'];
-       
+       $nom_test =$_SESSION['test'];
+      
 
 $var1= $bdd->query(' SELECT son.lien,son.id, COUNT(test_personne.id_son) as numberofutilization FROM son
                     LEFT JOIN test_personne ON son.id=test_personne.id_son
@@ -74,11 +77,11 @@ $var1= $bdd->query(' SELECT son.lien,son.id, COUNT(test_personne.id_son) as numb
           $i=$i+1;
         }       
 
-
+          $_SESSION['id_son']=$var2['id'];
           
            echo $p->pageHaut();
         if($nom_test!="representativite"){
-          echo $p->test($nom_test,$var2['lien'],$var2['id'],$id_test);}
+          echo $p->test($nom_test,$var2['lien']);}
         else{
           echo $p->testrep($nom_test,$noms_sons[1],$noms_sons[2],$noms_sons[3],$noms_sons[4],$noms_sons[5]);
         }

@@ -7,7 +7,7 @@
     <body>
 	<p>Vous ecouterez 5 versions différentes d'un même son. Classez de 1 à 5, les sens qui vous sont le plus reprresentatifs.<p>
      
-    <form method="post" action="templates/tests/identification_post.php">
+    <form method="post" action="templates/tests/representativite_post.php">
 
 	<audio  src="./__SON1__" controls>Veuillez mettre a jour votre navigateur !</audio>
 	<label class='center' for="champ1"><strong>N°</strong></label>
@@ -72,6 +72,7 @@
 		<option value="5">5</option>
 	</select>
 	<br/><br/>
+	<input type="submit" value="OK" /><br/>
 	
 	</body>
 </htlml>

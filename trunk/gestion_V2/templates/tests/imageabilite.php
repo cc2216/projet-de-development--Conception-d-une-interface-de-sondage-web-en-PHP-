@@ -26,8 +26,7 @@
 	<div><label class="right" for="8">8</label><input type="radio" name="reponse" value="8" id="8"/><br/></div>
 	<div><label class="right" for="9">9</label><input type="radio" name="reponse" value="9" id="9"/><br/></div>
 
-	<input type="hidden" name="id_son" value='.__IDSON__.' />
-	<input type="hidden" name="id_test" value='.__IDTEST__.' />
+	
 	
 	<input type="submit" value="OK" /><br/>
 	

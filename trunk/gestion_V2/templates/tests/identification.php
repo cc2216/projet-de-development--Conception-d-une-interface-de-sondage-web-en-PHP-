@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,6 +6,7 @@
     </head>
 	
     <body>
+	
 	<p>Vous ecouterez le son seulement une fois. Veuillez identifier le son en ecrivant son nom.<p>
 	<audio src="./__SON__" controls>Veuillez mettre a jour votre navigateur !</audio>
 	<form method="post" action="templates/tests/identification_post.php">
@@ -16,8 +18,7 @@
 	<span class="tooltip" >Veuillez saisir une reponse</span>
 	<br/>
 
-	<input type="hidden" name="id_son" value='.__IDSON__.' />
-	<input type="hidden" name="id_test" value='.__IDTEST__.' />
+	
 
 	<input type="submit" value="OK" /><br/>
 	

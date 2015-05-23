@@ -34,9 +34,6 @@ $var1=$bdd->query('SELECT * FROM categorie');
 	   <?php while($donnees=$var1->fetch()){ ?>
 	   <label for="<?php echo $donnees['code']; ?>"><?php echo $donnees['nom']; ?></label><input type="radio" name="reponse" value="<?php echo $donnees['id']; ?>" id="<?php echo $donnees['code']; ?>"/><br/>
 	    <?php } ?>
-
-	    <input type="hidden" name="id_son" value='.__IDSON__.' />
-	    <input type="hidden" name="id_test" value='.__IDTEST__.' />
 	
 	    <input type="submit" value="OK" /><br/>
 	

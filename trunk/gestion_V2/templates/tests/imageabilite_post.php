@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 try
 {
 	$bdd = new PDO('mysql:host=localhost;dbname=projetdev;charset=utf8', 'root', '');
@@ -7,7 +10,7 @@ catch (Exception $e)
 {
         die('Erreur : ' . $e->getMessage());
 		
-session_start;
+
 }
 
 
@@ -18,13 +21,19 @@ $var1->execute(array(
 	
 		
 		
-		'id_test' => $_POST['id_test'],
-		'id_son' => $_POST['id_son'],
+		'id_test' =>  $_SESSION['id_test'],
+		'id_son' => $_SESSION['id_son'],	
 		'test_imageabilite' => $_POST['reponse']
 		
 		
 		));
 
-		header('Location: http://localhost/gestion/?test=affectif&id=5');
+
+       
+        $_SESSION['test']='affectif';
+        $_SESSION['id_test']=5; 
+
+
+		header('Location: http://localhost/gestion');
  	
 ?>
