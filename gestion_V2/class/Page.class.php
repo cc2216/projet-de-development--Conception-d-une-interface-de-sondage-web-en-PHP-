@@ -55,7 +55,7 @@ class Page {
 
 	
 	/******************************/
-    function test($nom_test,$nom_son,$id_son,$id_test){
+    function test($nom_test,$nom_son){
         
         $file = $this->_arbo."templates/tests/".$nom_test.".php";
         //$file = $this->_arbo."tests/".$GLOBALS['bienvenue']."/templates/entete.tpl.php";
@@ -65,8 +65,8 @@ class Page {
 		$contents_body = fread ($handle, filesize ($file));
         fclose ($handle);
         	
-            $varTemplates = array("__SON__","__IDSON__","__IDTEST__");
-		$replaceVarTemplates = array($nom_son,$id_son,$id_test);
+            $varTemplates = array("__SON__");
+		$replaceVarTemplates = array($nom_son);
 		
 		//on remplace les variables
 		$contents_body = str_replace($varTemplates, $replaceVarTemplates, $contents_body);

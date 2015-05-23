@@ -23,8 +23,7 @@
 	<label class="right" for="5">5</label><input type="radio" name="reponse" value="5" id="5"/><br/>
 	<label class="right" for="6">6</label><input type="radio" name="reponse" value="6" id="6"/><br/>
 
-	<input type="hidden" name="id_son" value='.__IDSON__.' />
-	<input type="hidden" name="id_test" value='.__IDTEST__.' />
+	
 	
 	
 	<input type="submit" value="OK" /><br/>

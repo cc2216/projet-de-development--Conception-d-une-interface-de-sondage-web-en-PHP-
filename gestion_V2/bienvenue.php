@@ -1,4 +1,9 @@
-<?php session_start(); ?>
+<?php 
+$_SESSION['start']=1; 
+ 
+$var=$_SESSION['start'];
+echo "$var";
+?>
 <!DOCTYPE html>
 <script type="text/javascript">
 history.go(1);
@@ -53,10 +58,10 @@ history.go(1);
 	<h1 class="center">Sondage Neuro-pshycologique</h1>
 	</header>
     
-
 	<section>
 	
 	<article>
+
 	<p style="text-align: center; font-size: 20pt; margin: 20px">
 	Bienvenue cher internaute.</p>
 	<p class="page-title">Vous êtes sur le point de participer à un sondage neuro-psychologique, dont l'objectif est de mieux comprendre le fonctionnement de notre cerveau.<br/>
