@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<audio id="audioPlayer" width="300" height="32" src="MES_SONS_V2/Alarme/-_cloche_1_a_mono_44100.wav">
+</audio>
+<button onclick="play('audioPlayer', this)">Listen
+</button>
+
+<script type="text/javascript">
+function play(idAudioPlayer, context) {
+var audioplayer = document.querySelector('#' + idAudioPlayer);
+ 
+if (audioplayer.paused) {
+    audioplayer.play();
+}
+else {
+    context.textContent = 'Listen';
+ }
+}
+</script>
+</body>   
+</html>

@@ -23,7 +23,7 @@ echo '<ul>';
 		$nb_son++;
 		$tab=explode("_", $son);
 		if($tab[0]!="-"){
-		$bdd->exec('INSERT INTO son(nom,duree,choix,type,frequence,lien,id_categorie) VALUES(\''.$tab[0].'\',\''.$tab[1].'\',\''.$tab[2].'\',\''.$tab[3].'\',\''.str_replace('.wav', '', $tab[4]).'\',\'../MES_SONS/'.$son.'\',\''.$var2['id'].'\')');
+		$bdd->exec('INSERT INTO son(nom,duree,choix,type,frequence,lien,id_categorie) VALUES(\''.$tab[0].'\',\''.$tab[1].'\',\''.$tab[2].'\',\''.$tab[3].'\',\''.str_replace('.wav', '', $tab[4]).'\',\'../MES_SONS_V2/'.$son.'\',\''.$var2['id'].'\')');
 		$new_name= "-_".$son;
 		rename("../MES_SONS_V2/$var2[nom]/$son","../MES_SONS_V2/$var2[nom]/$new_name");
 		}
