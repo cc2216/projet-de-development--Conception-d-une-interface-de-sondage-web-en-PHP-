@@ -8,7 +8,7 @@ catch (Exception $e)
         die('Erreur : ' . $e->getMessage());
 }
 
-session_start;
+session_start();
 ?>
 
 <!DOCTYPE html>

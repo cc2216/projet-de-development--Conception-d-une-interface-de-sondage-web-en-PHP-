@@ -29,7 +29,7 @@
 	
 	<section>
 	<h1>Veuillez renseigner ce formulaire:</h1>
-	<form method="post" action="formulaire.php">
+	<form method="post" action="bienvenue_post.php">
 	<p>
 	
 	<label for="nom">Nom:</label>
