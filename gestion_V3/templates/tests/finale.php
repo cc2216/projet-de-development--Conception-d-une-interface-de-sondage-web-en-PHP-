@@ -7,5 +7,6 @@
     <body>
 	
 	<h1><strong>DONE !!!</strong></h1>
+    <img src="drawbysexe.php" />
 </body>
 </html>
