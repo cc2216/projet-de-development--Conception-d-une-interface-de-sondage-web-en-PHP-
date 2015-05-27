@@ -14,11 +14,6 @@ history.go(1);
 	<meta charset="utf-8" />
 	<title>Bienvenue</title>
     <link  rel="stylesheet" type="text/css" href="cssfile\css\style.css"/>
-    <script lang="javascript">
-    function look(){
-        window.location.href="showsexe.php";
-    }
-    </script>
     
 	</head>
     <style>
@@ -112,7 +107,6 @@ history.go(1);
 	<br/><br/>
 	<input type="submit" value="envoyer" >
 	<input type="reset" value="Reinitialiser le formulaire" ><br/><br/>
-	<input type="button" onclick="look();" value="afficher la repartition de sexe"/><br/><br/><br/><br/>
 
 	</p>
 	</form>
