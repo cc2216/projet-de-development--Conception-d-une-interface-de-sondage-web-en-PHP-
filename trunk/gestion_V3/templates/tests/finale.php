@@ -8,5 +8,6 @@
 	
 	<h1><strong>DONE !!!</strong></h1>
     <img src="drawbysexe.php" />
+    <img src="drawidentification.php" />
 </body>
 </html>
