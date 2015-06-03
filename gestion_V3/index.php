@@ -23,7 +23,16 @@
     }
     else
 	{
-	   $p = new Page ('./', $_SESSION['test'], 'Test d\''.$_SESSION['test']);//afficher la tete de test
+	    if($_SESSION['test']=='identification' || $_SESSION['test']=='imageabilite' )
+    {   
+      $p = new Page ('./', $_SESSION['test'], 'Test d\''.$_SESSION['test']);//afficher la tete de test
+    }
+    else if($_SESSION['test']=='affectif'){
+      $p = new Page ('./', $_SESSION['test'], 'Test d\'affectivite');//afficher la tete de test
+    }
+      else{
+            $p = new Page ('./', $_SESSION['test'], 'Test de '.$_SESSION['test']);//afficher la tete de test
+    }
 	   
       $c = new Connexion();
       $bdd = $c->connect();
