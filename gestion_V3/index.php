@@ -38,6 +38,8 @@
       $bdd = $c->connect();
 
        $nom_test =$_SESSION['test'];
+       $idpersonne=$_SESSION['id_personne'];
+      
       
 
 $var1= $bdd->query(' SELECT son.lien,son.id, COUNT(test_personne.id_son) as numberofutilization FROM son
@@ -48,7 +50,7 @@ $var1= $bdd->query(' SELECT son.lien,son.id, COUNT(test_personne.id_son) as numb
                     SELECT son.nom FROM son 
                     WHERE son.id IN (
                     SELECT test_personne.id_son FROM test_personne 
-                    WHERE test_personne.id_personne = 1
+                    WHERE test_personne.id_personne = '.$idpersonne.'
                     ) GROUP BY nom
                     ) 
                     GROUP BY son.nom
@@ -69,7 +71,7 @@ $var1= $bdd->query(' SELECT son.lien,son.id, COUNT(test_personne.id_son) as numb
                       SELECT son.nom FROM son 
                       WHERE son.id IN (
                       SELECT test_personne.id_son FROM test_personne 
-                      WHERE test_personne.id_personne = 1
+                      WHERE test_personne.id_personne = '.$idpersonne.'
                       ) GROUP BY nom
                       ) 
                       GROUP BY son.nom
