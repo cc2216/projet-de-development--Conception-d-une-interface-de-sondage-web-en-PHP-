@@ -1,8 +1,7 @@
 <?php 
 $_SESSION['start']=1; 
  
-$var=$_SESSION['start'];
-echo "$var";
+
 ?>
 <!DOCTYPE html>
 <script type="text/javascript">

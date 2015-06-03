@@ -31,7 +31,7 @@ $var1->execute(array(
 $var2=$bdd->query(' SELECT * FROM personne ORDER BY id DESC LIMIT 0,1');
 $var3=$var2->fetch();
 
-	
+$_SESSION['id_personne']=$var3['id'];	
 	
 	 $var2->closeCursor();
 
