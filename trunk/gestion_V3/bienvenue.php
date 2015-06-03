@@ -50,7 +50,7 @@ history.go(1);
 	<body>	
 <header>
      <img src="image/logo_telecom_bretagne.jpg" alt="Ballade" width="120" height="120"/>
-	<h1 class="center">Sondage Neuro-pshycologique</h1>
+	<h1 class="center">Sondage Neuro-psychologique</h1>
 	</header>
     
 	<section>

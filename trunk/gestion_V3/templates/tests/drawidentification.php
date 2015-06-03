@@ -20,13 +20,15 @@ $datay1[$i++]=$res1->fetch()[2];
 $datay1[$i]=$res2->fetch()[2];
 
 // Setup title
-$graph->title->Set('r¨¦partition par identification');
+$graph->title->Set('Resultats du test d\'identification');
 $graph->title->setFont(FF_SIMSUN,FS_BOLD,14);
 // Create the first bar
 $bplot = new BarPlot($datay1);
 $bplot->SetFillGradient('AntiqueWhite2','AntiqueWhite4:0.8',GRAD_VERT);
 $bplot->SetColor('darkred');
-$x=array('m¨ºme nom avec le naturel','pas m¨ºme');
+$x=array('Nombres de 
+reponses correctes ','Nombres de 
+reponses fausses');
 $graph->xaxis->SetTickLabels($x); 
 $graph->xaxis->SetFont(FF_SIMSUN,FS_BOLD);
 // Create the second bar
