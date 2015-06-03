@@ -8,13 +8,14 @@ $c = new Connexion();
 
 
 
-$var1=$bdd->prepare(' INSERT INTO test_personne(id_test,id_son,test_identification) VALUES(:id_test,:id_son,:test_identification)'); 
+$var1=$bdd->prepare(' INSERT INTO test_personne(id_test,id_son,test_identification,id_personne) VALUES(:id_test,:id_son,:test_identification,:id_personne)'); 
 $var1->execute(array(
 	
 		
 		'id_test' => $_SESSION['id_test'],
 		'id_son' => $_SESSION['id_son'],
-		'test_identification' => $_POST['reponse']
+		'test_identification' => $_POST['reponse'],
+		'id_personne'=>$_SESSION['id_personne']
 		
 		
 		));
