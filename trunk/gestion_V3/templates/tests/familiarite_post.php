@@ -12,13 +12,14 @@ catch (Exception $e)
 
 }
 
-$var1=$bdd->prepare('INSERT INTO test_personne(id_test,id_son,test_familiarite) VALUES(:id_test,:id_son,:test_familiarite)');
+$var1=$bdd->prepare('INSERT INTO test_personne(id_test,id_son,test_familiarite,id_personne) VALUES(:id_test,:id_son,:test_familiarite,:id_personne)');
 $var1->execute(array(
 			
 
 	            'id_test' =>  $_SESSION['id_test'],
 		         'id_son' => $_SESSION['id_son'],		
-				'test_familiarite' => $_POST['reponse']
+				'test_familiarite' => $_POST['reponse'],
+				'id_personne'=>['id_personne']
 				));
 
         $_SESSION['test']='imageabilite';
