@@ -19,7 +19,7 @@ $var1->execute(array(
 	            'id_test' =>  $_SESSION['id_test'],
 		         'id_son' => $_SESSION['id_son'],		
 				'test_familiarite' => $_POST['reponse'],
-				'id_personne'=>['id_personne']
+				'id_personne'=>$_SESSION['id_personne']
 				));
 
         $_SESSION['test']='imageabilite';

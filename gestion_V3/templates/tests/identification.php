@@ -15,7 +15,7 @@
 	<label class='center' for="reponse">Reponse</label>
 	<input type="text" name="reponse" id="reponse"/>
 	<br/>
-	<span class="tooltip" >Veuillez saisir une reponse</span>
+	
 	<br/>
 
 	
