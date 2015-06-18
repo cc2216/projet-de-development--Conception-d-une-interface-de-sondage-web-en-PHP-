@@ -63,8 +63,8 @@ $var1= $bdd->query(' SELECT son.lien,son.id, COUNT(test_personne.id_son) as numb
 
 
 
- $var3= $bdd->query(' SELECT son.lien FROM son WHERE son.lien LIKE CONCAT(
-'%',(SElECT CONCAT(son.nom,"_",son.duree) FROM son
+ $var3= $bdd->query('SELECT son.lien FROM son WHERE son.lien LIKE CONCAT(
+"%",(SElECT CONCAT(son.nom,"_",son.duree) FROM son
 LEFT JOIN test_personne ON son.id=test_personne.id_son
 WHERE son.nom NOT IN (
                 SELECT son.nom FROM son 
@@ -75,7 +75,7 @@ WHERE son.nom NOT IN (
                 ) 
 GROUP BY son.nom, son.duree
 ORDER BY COUNT(test_personne.id_son)
-LIMIT 1),'%') ');
+LIMIT 1),"%")  ');
         
         $noms_sons = array();
         $i=1;
