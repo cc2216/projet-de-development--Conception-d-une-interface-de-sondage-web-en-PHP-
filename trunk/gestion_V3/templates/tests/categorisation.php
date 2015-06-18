@@ -30,7 +30,7 @@ $var1=$bdd->query('SELECT * FROM categorie');
     </style>
 
 	<body>
-	   <p>Vous ecouterez le son seulement une fois. Veuillez sélectionner la bonne réponse.</p>
+	   <p style="font-size:150%">Ecoutez ce son et choisissez la catégorie à laruelle il apparient(un seul choix possible)</p></br>
 	   <audio id="audioPlayer" width="300" height="32" src="./__SON__"></audio>
     <button onclick="play('audioPlayer', this)">Ecouter</button>
     <script type="text/javascript">
@@ -50,14 +50,16 @@ $var1=$bdd->query('SELECT * FROM categorie');
 </script>
 	   <form method="post" action="templates/tests/categorisation_post.php">
 	   <p>
-        
-	   <label class="center" for="reponse">Réponse</label><br/>
-       
+       </br>
+    
+	   <label class="center" for="reponse">Réponse</label>
        <div>
 	   <?php while($donnees=$var1->fetch()){ ?>
 	   <label for="<?php echo $donnees['code']; ?>"><?php echo $donnees['nom']; ?></label><input type="radio" name="reponse" value="<?php echo $donnees['id']; ?>" id="<?php echo $donnees['code']; ?>"/><br/>
 	    <?php } ?>
 	   </div>
+       </br>
+       
        
 	    <input type="submit" value="OK" /><br/>
 	
