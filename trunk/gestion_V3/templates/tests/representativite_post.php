@@ -36,7 +36,7 @@ $var1->execute(array(
        
         
 
-		header('Location: http://localhost/gestion/templates/tests/finale.php');
+		header('Location: http://localhost/gestion/templates/tests/remerciement.php');
 
  	
 ?>
