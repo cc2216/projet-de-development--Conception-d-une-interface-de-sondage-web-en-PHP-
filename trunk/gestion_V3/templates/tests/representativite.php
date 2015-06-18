@@ -6,7 +6,7 @@
     </head>
 
     <body>
-	<p>Vous ecouterez 5 versions différentes d'un même son. Classez de 1 à 5, les sens qui vous sont le plus reprresentatifs.<p>
+	<p style="font-size:150%">Vous ecouterez 5 versions différentes d'un même son. Classez de 1 à 5, les sens qui vous sont le plus reprresentatifs.<p>
      
     <form method="post" action="templates/tests/representativite_post.php">
 

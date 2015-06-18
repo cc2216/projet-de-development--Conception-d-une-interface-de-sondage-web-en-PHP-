@@ -8,7 +8,7 @@ history.go(1);
 	<head>
 	<meta charset="utf-8" />
 	<title>Remerciement</title>
-    <link  rel="stylesheet" type="text/css" href="cssfile\css\style.css"/>
+    <link  rel="stylesheet" type="text/css" href="../cssfile\css\style.css"/>
     
 	</head>
     <style>
