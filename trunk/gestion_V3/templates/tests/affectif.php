@@ -10,14 +10,30 @@
             }
         div>input{
             position: absolute;
-            left:49.5%;
+            left:49.5%;}
     
     </style>
 
 	
 	<body>
 	<p>Choisissez une valeur de 1 à 9 suivant le caractere calme ou exite que vous vous representez du son. Vous pouvez ecoutez le son autant de fois que possible. </p>
-		<audio src="./__SON__" controls>Veuillez mettre à jour votre navigateur !</audio>
+		<audio id="audioPlayer" width="300" height="32" src="./__SON__"></audio>
+    <button onclick="play('audioPlayer', this)">Ecouter</button>
+    <script type="text/javascript">
+
+     function play(idAudioPlayer, context) {
+     var audioplayer = document.querySelector('#' + idAudioPlayer);
+
+
+    if (audioplayer.played) {
+        audioplayer.play();
+        context.textContent = 'Ecouter';
+        
+       }
+       }
+
+       
+</script>
 	<form method="post" action="templates/tests/affectif_post.php">
 	<p>
 

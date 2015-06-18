@@ -19,7 +19,23 @@
 
 	<body>
 	<p>Choisissez sur une echelle de 1 à 6, votre degre de familiarite avec ce son (1=Peu familie; 6=Tres famlilie). Vous pouvez rejouer le son autant de fois que necessaire.<p>
-	<audio src="./__SON__" controls>Veuillez mettre à jour votre navigateur !</audio>
+	<audio id="audioPlayer" width="300" height="32" src="./__SON__"></audio>
+    <button onclick="play('audioPlayer', this)">Ecouter</button>
+    <script type="text/javascript">
+
+     function play(idAudioPlayer, context) {
+     var audioplayer = document.querySelector('#' + idAudioPlayer);
+
+
+    if (audioplayer.played) {
+        audioplayer.play();
+        context.textContent = 'Ecouter';
+        
+       }
+       }
+
+       
+</script>
 	<form method="post" action="templates/tests/familiarite_post.php">
 	<p>
     
