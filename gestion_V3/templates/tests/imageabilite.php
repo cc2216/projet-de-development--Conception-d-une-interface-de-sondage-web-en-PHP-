@@ -17,7 +17,23 @@
 	
 	<body>
 	<p>Notez de 1 à 9 la facilite avec laquelle vous pouvez evoquez l'image correspondant à ce son. Vous pouvez entendre ce son autant de fois que necessaire. </p>
-	<audio src="./__SON__" controls>Veuillez mettre à jour votre navigateur !</audio>
+	<audio id="audioPlayer" width="300" height="32" src="./__SON__"></audio>
+    <button onclick="play('audioPlayer', this)">Ecouter</button>
+    <script type="text/javascript">
+
+     function play(idAudioPlayer, context) {
+     var audioplayer = document.querySelector('#' + idAudioPlayer);
+
+
+    if (audioplayer.played) {
+        audioplayer.play();
+        context.textContent = 'Ecouter';
+        
+       }
+       }
+
+       
+</script>
 	<form method="post" action="templates/tests/imageabilite_post.php">
 	<p>
 

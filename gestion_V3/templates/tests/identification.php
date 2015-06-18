@@ -8,7 +8,23 @@
     <body>
 	
 	<p>Vous ecouterez le son seulement une fois. Veuillez identifier le son en ecrivant son nom.<p>
-	<audio src="./__SON__" controls>Veuillez mettre a jour votre navigateur !</audio>
+	<audio id="audioPlayer" width="300" height="32" src="./__SON__"></audio>
+    <button onclick="play('audioPlayer', this)">Ecouter</button>
+    <script type="text/javascript">
+
+     function play(idAudioPlayer, context) {
+     var audioplayer = document.querySelector('#' + idAudioPlayer);
+
+
+    if (audioplayer.played) {
+        audioplayer.play();
+        context.textContent = 'Ecouter';
+        
+       }
+       }
+
+       
+</script>
 	<form method="post" action="templates/tests/identification_post.php">
 	<p>
 

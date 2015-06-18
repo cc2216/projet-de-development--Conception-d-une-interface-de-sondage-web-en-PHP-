@@ -31,7 +31,23 @@ $var1=$bdd->query('SELECT * FROM categorie');
 
 	<body>
 	   <p>Vous ecouterez le son seulement une fois. Veuillez sélectionner la bonne réponse.</p>
-	   <audio src="./__SON__" controls>Veuillez mettre à jour votre navigateur !</audio>
+	   <audio id="audioPlayer" width="300" height="32" src="./__SON__"></audio>
+    <button onclick="play('audioPlayer', this)">Ecouter</button>
+    <script type="text/javascript">
+
+     function play(idAudioPlayer, context) {
+     var audioplayer = document.querySelector('#' + idAudioPlayer);
+
+
+    if (audioplayer.played) {
+        audioplayer.play();
+        context.textContent = 'Ecouter';
+        
+       }
+       }
+
+       
+</script>
 	   <form method="post" action="templates/tests/categorisation_post.php">
 	   <p>
         
