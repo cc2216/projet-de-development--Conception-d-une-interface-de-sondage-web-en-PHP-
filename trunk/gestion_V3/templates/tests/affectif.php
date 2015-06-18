@@ -17,6 +17,7 @@
 	<body>
 	</br>
 	<p style="font-size:150%">Notez le caractère calme où excité de ce son sûr une échelle de 1 à 9(1 calme; 9 excité).</p>
+   <audio id="audioPlayer" width="300" height="32" src="./__SON__"></audio>
     <button onclick="play('audioPlayer', this)">Ecouter</button>
     <script type="text/javascript">
 
