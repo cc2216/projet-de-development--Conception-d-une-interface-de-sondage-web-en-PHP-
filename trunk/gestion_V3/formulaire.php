@@ -88,9 +88,9 @@ history.go(1);
 	<select name="pays" id="pays"> 
 	    <option value="none">Selectionner votre pays d'origine</option>
 		<option value="france">France</option>
-	    <option value="france">Maroc</option>
-		<option value="france">Chine</option>
-		<option value="france">Tunisie</option>
+	    <option value="maroc">Maroc</option>
+		<option value="chine">Chine</option>
+		<option value="tunisie">Tunisie</option>
 	</select>	
 	<span class="tooltip">Veuillez selectionner votre pays d'origine</span><br/><br/>
      
