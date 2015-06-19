@@ -17,6 +17,7 @@ history.go(1);
         margin:auto;
         text-align: center;
         width:70%;
+        font-size: 18px;
     }
     header{
         margin:auto;
@@ -29,7 +30,7 @@ history.go(1);
     a:visited {color:#00FF00;} 
     html,body{margin:0;padding:0}
     body{
-        font: 76% arial,sans-serif;
+        font: 15% arial,sans-serif;
         text-align:center;
         position: relative;
         }
@@ -43,7 +44,7 @@ history.go(1);
 </style>
 	<body>	
 <header>
-     <img src="image/logo_telecom_bretagne.jpg" alt="Ballade" width="120" height="120"/>
+     <img src="../../image/logo_telecom_bretagne.jpg" alt="Ballade" width="120" height="120"/>
 	
 	</header>
 
@@ -52,10 +53,17 @@ history.go(1);
         <audio src="#" controls>Veuillez mettre a jour votre navigateur !</audio>
 
 
-    <p class="center"><strong>Lisez attentivement les consignes de chaque test avant de cliquer sur le son. Certains sons ne pourront pas êtes reécoutés.</strong></p>   
+    <br/><br/><br/><p class="center"><strong>Lisez attentivement les consignes de chaque test avant de cliquer sur le son. Certains sons ne pourront pas êtes reécoutés.</strong></p>   
+   <br/><br/><br/><br/>
+<section class="center">
+    <form method="post" action="http://localhost/gestion">
+    <p> 
+    <input type="submit" value="Commencer le test" >
 
-
+    </p>
+    </form>
+    </section>
 
     </body>
     </html>
-    <?php header('Location: http://localhost/gestion'); ?>
+    
