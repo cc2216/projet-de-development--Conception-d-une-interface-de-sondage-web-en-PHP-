@@ -8,20 +8,20 @@
     <body>
 	
 	<p style="font-size:150%">Ecoutez attentivement ce son et dites de quoi il s'agit.<p>
-	<p style="font-size:150%">Attention!une seul écoute possible.<p>
+	<p style="font-size:150%">Attention! une seul écoute possible.<p>
 	<audio id="audioPlayer" width="300" height="32" src="./__SON__"></audio>
-    <button onclick="play('audioPlayer', this)">Ecouter</button>
+    <button onclick="play('audioPlayer', this); this.onclick=''"><img src="./templates/image/ecouter.png"></button>
     <script type="text/javascript">
 
      function play(idAudioPlayer, context) {
      var audioplayer = document.querySelector('#' + idAudioPlayer);
+     var enable = 1;
 
-
-    if (audioplayer.played) {
-        audioplayer.play();
-        context.textContent = 'Ecouter';
-        
-       }
+    	if (audioplayer.played && enable == 1) {
+       		 audioplayer.play();
+        	 context.textContent = 'déjà écoutè';
+        	 enable = 0;
+       		}
        }
 
        

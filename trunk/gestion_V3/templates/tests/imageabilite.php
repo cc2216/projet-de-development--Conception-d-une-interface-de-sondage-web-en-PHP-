@@ -18,7 +18,7 @@
   </br>
 	<p style="font-size:150%">Notez de 1 à 9 la facilite avec laquelle vous pouvez evoquer l'image correspondant à ce son(1 peu imageable, 9 très imageable).</br> Vous pouvez écouter ce son autant de fois que necessaire. </p>
    <audio id="audioPlayer" width="300" height="32" src="./__SON__"></audio>
-    <button onclick="play('audioPlayer', this)">Ecouter</button>
+    <button onclick="play('audioPlayer', this); this.onclick=''"><img src="./templates/image/ecouter.png"></button>
     <script type="text/javascript">
 
      function play(idAudioPlayer, context) {
@@ -27,7 +27,7 @@
 
     if (audioplayer.played) {
         audioplayer.play();
-        context.textContent = 'Ecouter';
+        context.textContent =  'déjà écouté';
         
        }
        }
