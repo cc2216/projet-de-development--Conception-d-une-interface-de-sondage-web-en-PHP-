@@ -19,7 +19,7 @@
 
 	<body>
     <br/>
-	<p style="font-size:150%">Choisissez sur une echelle de 1 à 6, votre degre de familiarite avec ce son (1=Peu familié; 6=Tres famlilié). Vous pouvez rejouer le son autant de fois que necessaire.<p>
+	<p style="font-size:150%">Choisissez sur une echelle de 1 à 6, votre degre de familiarite avec ce son (1=Peu familier; 6=Tres familier). Vous pouvez rejouer le son autant de fois que necessaire.<p>
 	<audio id="audioPlayer" width="300" height="32" src="./__SON__"></audio>
     <button onclick="play('audioPlayer', this); this.onclick=''"><img src="./templates/image/ecouter.png"></button>
     <script type="text/javascript">
