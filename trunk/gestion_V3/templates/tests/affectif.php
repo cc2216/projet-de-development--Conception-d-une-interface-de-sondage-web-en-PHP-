@@ -18,7 +18,7 @@
 	</br>
 	<p style="font-size:150%">Notez le caractère calme où excité de ce son sûr une échelle de 1 à 9(1 calme; 9 excité).</p>
    <audio id="audioPlayer" width="300" height="32" src="./__SON__"></audio>
-    <button onclick="play('audioPlayer', this); this.onclick=''"><img src="./templates/image/ecouter.png"></button>
+    <button onclick="play('audioPlayer', this)"><img src="./templates/image/ecouter.png"></button>
     <script type="text/javascript">
 
      function play(idAudioPlayer, context) {
@@ -27,7 +27,7 @@
 
     if (audioplayer.played) {
         audioplayer.play();
-        context.textContent = 'déjà écouté';
+     
         
        }
        }
