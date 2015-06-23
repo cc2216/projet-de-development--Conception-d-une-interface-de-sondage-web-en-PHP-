@@ -48,12 +48,12 @@ history.go(1);
 	
 	</header>
 
-    <p class="center">Maintenant le test va commencer. Vérifiez que votre materiel fonctionne bien et que vous entendez confortablement le son test ci-dessous.<p><br/><br/>
+    <p class="center">Maintenant le test va commencer. Vérifiez que votre matériel fonctionne bien et que vous entendez confortablement le son test ci-dessous.<p><br/><br/>
 
         <audio src="#" controls>Veuillez mettre a jour votre navigateur !</audio>
 
 
-    <br/><br/><br/><p class="center"><strong>Lisez attentivement les consignes de chaque test avant de cliquer sur le son. Certains sons ne pourront pas êtes reécoutés.</strong></p>   
+    <br/><br/><br/><p class="center"><strong>Lisez attentivement les consignes de chaque test avant de cliquer sur le son. Certains sons ne pourront pas êtres réécoutés.</strong></p>   
    <br/><br/><br/><br/>
 <section class="center">
     <form method="post" action="http://localhost/gestion">

@@ -62,7 +62,7 @@ history.go(1);
      
     <section>
 	<article>
-	<p font-size:"18px">Vous êtes sur le point de participer à un sondage , dont l'objectif est d'obtenir des praramètres sur une banque de sons.<br/>
+	<p font-size:"18px">Vous êtes sur le point de participer à un sondage dont l'objectif est d'obtenir des paramètres sur une banque de sons.<br/>
 	Ce petit quizz contient 6 tests audios et un questionnaire initial.<br/></p><br/>
 	</article>
     </section>
@@ -78,7 +78,7 @@ history.go(1);
 
 	<footer>
 	<br/><br/><br/><h3>Auteurs</h3>
-	Ce site a été réalisé, dans le cadre d'un projet à Telecom Bretagne, par: Reda AFFANE, Quang-Nam NGUYEN, Julien TRING , Chao CHEN.<br/>
+	Ce site a été réalisé, dans le cadre d'un projet à Télécom Bretagne, par: AFFANE Reda, NGUYEN Quang-Nam, TRING Julien , CHEN Chao.<br/>
 	Ce projet a été encadré par:  DUFOR Olivier, KIMDUFOR Deok-Hee, VAILLANT Pierre-Hervé, BAZIN Jean-Noël, GOURVENNEC Bernard. 
 	</footer>
 

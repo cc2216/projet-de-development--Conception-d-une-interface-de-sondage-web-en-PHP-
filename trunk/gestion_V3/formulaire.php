@@ -66,13 +66,13 @@ history.go(1);
 	<input type="text" name="nom" id="nom"/> 
 	<span class="tooltip">Veuillez saisir votre nom</span><br/>
 	
-	<label class="center" for="prenom">Prenom:</label>
+	<label class="center" for="prenom">Prénom:</label>
 	<input type="text" name="prenom" id="prenom"/> 
 	<span class="tooltip">Veuillez saisir votre prénom</span><br/>
 	
 	
     <label class="center" for="masculin">Masculin:<input type="radio" name="sexe"  value="masculin" id="masculin"/> </label>
-	<label  class="center" for="feminin">Feminin:<input type="radio" name="sexe"  value="feminin" id="feminin"/></label>
+	<label  class="center" for="feminin">Féminin:<input type="radio" name="sexe"  value="feminin" id="feminin"/></label>
 	<span class="tooltip">Vous devez sélectionnez votre sexe</span><br/>
     
 	
