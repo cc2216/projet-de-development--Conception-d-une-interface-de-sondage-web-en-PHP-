@@ -56,7 +56,7 @@ history.go(1);
 	 </header>
      
     
-	<br/><br/><br/><p font-size:"18px">On vous remercie de votre temps. Si vous souhaitez nous contacter, cliquez <a href="#">ici</a></p><br/><br/>
+	<br/><br/><br/><p font-size:"18px">Nous vous remercions de votre temps. Si vous souhaitez nous contacter, cliquez <a href="#">ici</a></p><br/><br/>
 	<p>Vous pouvez consulter les statistiques en appuyant sur le bouton ci-dessous<p><br/>
     <section class="center">
     <form method="post" action="finale.php">

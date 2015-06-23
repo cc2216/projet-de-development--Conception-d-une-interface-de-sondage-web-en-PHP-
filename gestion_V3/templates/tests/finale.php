@@ -6,7 +6,7 @@
 	
     <body>
 	
-	<h1><strong>Resultats</strong></h1>
+	<h1><strong>Résultats</strong></h1>
     <img src="drawbysexe.php" />
     <img src="drawidentification.php" />
 </body>

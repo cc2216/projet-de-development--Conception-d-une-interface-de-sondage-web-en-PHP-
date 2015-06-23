@@ -16,7 +16,7 @@
 	
 	<body>
 	</br>
-	<p style="font-size:150%">Notez le caractère calme où excité de ce son sûr une échelle de 1 à 9(1 calme; 9 excité).</p>
+	<p style="font-size:150%">Notez le caractère calme ou excité de ce son sur une échelle de 1 à 9 (1=calme; 9=excité).</p>
    <audio id="audioPlayer" width="300" height="32" src="./__SON__"></audio>
     <button onclick="play('audioPlayer', this)"><img src="./templates/image/ecouter.png"></button>
     <script type="text/javascript">
@@ -57,7 +57,7 @@
 	
 	
 	</p>
-	<p style="font-size:150%">Notez le caractère triste où joyeux de ce son sur une échelle de -5 à 5(-5=triste; 0=neutre; 5=joyeux).</p>
+	<p style="font-size:150%">Notez le caractère triste ou joyeux de ce son sur une échelle de -5 à 5(-5=triste; 0=neutre; 5=joyeux).</p>
 	
 	<p>
 
