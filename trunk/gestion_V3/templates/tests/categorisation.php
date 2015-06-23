@@ -30,7 +30,9 @@ $var1=$bdd->query('SELECT * FROM categorie');
     </style>
 
 	<body>
-	   <p style="font-size:150%">Ecoutez ce son et choisissez la catégorie à laquelle il apparient(un seul choix possible)</p></br>
+
+	   <p style="font-size:150%">Ecoutez ce son et choisissez la catégorie à laquelle il appartient (un seul choix possible).</p></br>
+
 	   <audio id="audioPlayer" width="300" height="32" src="./__SON__"></audio>
     <button onclick="play('audioPlayer', this)"><img src="./templates/image/ecouter.png"></button>
     <script type="text/javascript">
